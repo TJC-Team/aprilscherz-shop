@@ -455,7 +455,11 @@ a.readmore_bt {
 .logo {
 	float: left;
 	position: relative;
+	vertical-align: auto;
+
 }
+
+
 
 nav.main-menu {
 	float: right;
@@ -2800,11 +2804,16 @@ button.btn.btn-primary:focus {
      text-align: center;
 }
 
+.footertx {
+	padding-top: 20px;
+}
+
 .footertx p a {
      text-decoration: dashed;
 }
 
 .header_a {
+
      text-align: center;
      color: white;
      text-decoration: none !important;
@@ -3144,5 +3153,12 @@ stong {
 	overflow: hidden !important;
 	display: block;
 	float: left;
-	
+}
+
+#special-id-for-zhyrd {
+	text-align: left;
+}
+
+#special-id-for-zhyrd li {
+	padding-top: 5px;
 }

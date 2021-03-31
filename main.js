@@ -19,7 +19,7 @@ let setAttributes = (...args) => {
     let el = document.createElement(args[0])
     var l = args.length;
     for (var i = 1; i < l; i++) {
-        if (i%2 != 0) {
+        if (i % 2 != 0) {
             // Even
             var attribute = args[i];
         } else {
@@ -61,7 +61,7 @@ let checkCookies = () => {
 
     }
 }
-*/ 
+*/
 
 
 
@@ -69,7 +69,7 @@ let checkCookies = () => {
 // Produkte per Array
 
 var products = {
-    "total": 14,
+    "total": 20,
     "tjcplus": {
         0: {
             price: [4.99, 6.99]
@@ -85,7 +85,7 @@ var products = {
         "name": "Anti-Mute-Karte",
         "description": "Kennen Sie das auch? Sie benehmen sich wie der letze Horst und werden gemuted? Dieses Problem ist von nun an nicht mehr! Spielen Sie diese Karte aus, und Sie werden sofort entmuted!",
         "images": {
-          0: "../images/products/unmute-karte/330x186.png" // Großes Preview
+            0: "../images/products/unmute-karte/330x186.png" // Großes Preview
         },
         "ratings": {
             "total": 2,
@@ -105,10 +105,10 @@ var products = {
         "copy": "Idee & Umsetzung: TJC-Team <br> Originalbild von Hasbro"
     },
     1: {
-        "name": "Redstone auf Klinke ",
-        "description": "Lästige Techniken mit Redstone zu verbinden muss nun nicht mehr sein! Ob Notenblöcke, Kolben oder andere Techniken - verbinden sie doch mit Klinke!",
+        "name": "Redstone auf Klinke",
+        "description": "Lästige Techniken mit Redstone zu verbinden muss nun nicht mehr sein! Ob Notenblöcke, Kolben oder andere Techniken - verbinden Sie doch mit Klinke!",
         "images": {
-          0: "../images/products/redstone-auf-klinke/330x330.png" // Großes Preview
+            0: "../images/products/redstone-auf-klinke/330x330.png" // Großes Preview
         },
         "ratings": {
             "total": 3,
@@ -120,7 +120,7 @@ var products = {
             1: {
                 "stars": 4,
                 "name": "Anonym",
-                "text": "Wenn man nach einem Kabel sucht, welches mehr aushält als ein wenig staub, ist hier richig! Leider nur etwas teuer."
+                "text": "Wenn man nach einem Kabel sucht, welches mehr aushält als ein wenig Staub, ist hier richig! Leider nur etwas teuer."
             },
             2: {
                 "stars": 5,
@@ -132,31 +132,46 @@ var products = {
         "sale": [false, 0],
         "copy": "Idee & Umsetzung: TJC-Team. Inspiriert von Traumshop.net"
 
-    }, 
+    },
     2: {
         "name": "Shift-Taste",
         "description": "Während moderne Tastaturen bereits mehrere davon haben, gibt es hier einen Ersatz für ewig Gestrige! USB Plug and Play!",
         "images": {
-          0: "../images/products/shift/330x330.png" // Großes Preview
+            0: "../images/products/shift/330x330.png" // Großes Preview
         },
         "ratings": {
-            "total": 1,
+            "total": 4,
             0: {
-                "stars": 4,
+                "stars": 1,
+                "name": "xXGamer_SchorschXx",
+                "text": "DAS IST ABZOCKE; DIE TASTE BLEIBT BEI ÖFTERER BENUTZUNG IMMER KLEMMEN: NICHT ZU EMPFEHLEN!!"
+            },
+            1: {
+                "stars": 2,
+                "name": "kühler_stein42",
+                "text": "Der Tastendruck fühlt sich sehr schön an, nur leider sehe ich keine RGB-Effekte. Diese fehlenden Effekte beeinträchtigen meine FPS erheblich, welche für diverse Computerspiele von Nöten sind! Ich wäre bereit mehr zu zahlen, sollte sich dieses Problem behoben haben."
+            },
+            2: {
+                "stars": 1,
                 "name": "Anonym",
-                "text": null
+                "text": "Schlechte Verarbeitung! Nach nur 2 angeschauten Josef-Tutorials ist sie zur Matschepampe geworden! Wasserfest ist sie auch nicht..."
+            },
+            3: {
+                "stars": 5,
+                "name": "Motz",
+                "text": "ICH KANN GAR NICHT MEHR GENUG VON DIESER TOLLEN TASTE KRIEGEN!!! % STERNE!"
             }
         },
         "preis": 12.99,
         "sale": [false, 0],
         "copy": "Umsetzung: TJC-Team. Foto: Unsplash. Danke an Nono für die Idee!"
-   
+
     },
     3: {
         "name": "MineKart Vollversion",
-        "description": "Ja, ich bin ehrlich zu euch. MineKart nicht fertig zu stellen, war eine geniale Idee! Genauer gesagt, ehr eine Art Promo-Move! Nundenn, hier gibt es die Vollversion mit euren Maps!",
+        "description": "Ja, ich bin ehrlich zu euch. MineKart nicht fertig zu stellen, war eine geniale Idee! Genauer gesagt, ehr eine Art Promo-Move! Na dann, hier gibt es die Vollversion mit euren Maps!",
         "images": {
-            0: "../images/products/platzhalter/330x330.png"
+            0: "../images/products/minekart/330x.jpg"
         },
         "ratings": {
             "total": 2,
@@ -173,7 +188,7 @@ var products = {
         },
         "preis": 9.99,
         "sale": [true, 8.99],
-        "copy": "Umsetzung: TJC-Team. Danke an Josef persönlich für die Idee!"
+        "copy": "Umsetzung: TJC-Team. Danke an Josef persönlich für die Idee! Außerdem hat uns mjt01 ebenfalls bei der Idee geholfen."
     },
     4: {
         "name": "RickRoll per Post",
@@ -202,7 +217,7 @@ var products = {
     },
     5: {
         "name": "NoPushToTalk-Free-Card",
-        "description": "Talktimes sind immer etwas besonderes! Besonders, wenn man mal selbst die Chance hat, mit Josef zu reden. Nur leider ist dies oft nicht möglich, da viel zu viele Nutzer im Talk sind. Mit dieser Karte bekommen Sie einmalig PushToTalk-Rechte, und können so durchgehend in ihr Mikrofon 'THEJOCRAFT' schreien, bis wir sie Bannen!",
+        "description": "Talktimes sind immer etwas besonderes! Besonders, wenn man mal selbst die Chance hat, mit Josef zu reden. Nur leider ist dies oft nicht möglich, da viel zu viele Nutzer im Talk sind. Mit dieser Karte bekommen Sie einmalig PushToTalk-Rechte, und können so durchgehend in Ihr Mikrofon 'THEJOCRAFT' schreien, bis wir Sie bannen!",
         "images": {
             0: "../../images/products/ptt/330.png",
             1: "../../images/products/ptt/full.png",
@@ -221,7 +236,7 @@ var products = {
     },
     6: {
         "name": "Die BannCard",
-        "description": "Sie haben mal wieder DM-Werbung von irgendeinem Random Nutzer bekommen? Jemand nervt Sie mal wieder im Chat? Oder wollen Sie einfach mal anderen die macht des Kindes eines Discord-Entwicklers zeigen? Kein Problem mit der BannCard 25 und der BannCard 50! Einfach die BannCard gezückt und mit einem Rabatt von 25% / 50% den Nutzer aus dem TJC-Netzwerk gebannt. Das Beste: Die BannCards gelten für genau ein Jahr, indem Sie mit der Reduzierung beliebig viele Nutzer bannen lassen können. <br><sub>Der Bann ist nicht im Preis enthalten und zu einem Preis von 750.000.000€ zzgl. MWSt. ausführbar.</sub>",
+        "description": "Sie haben mal wieder DM-Werbung von irgendeinem Random Nutzer bekommen? Jemand nervt Sie mal wieder im Chat? Oder wollen Sie einfach mal anderen die Macht des Kindes eines Discord-Entwicklers zeigen? Kein Problem mit der BannCard 25 und der BannCard 50! Einfach die BannCard gezückt und mit einem Rabatt von 25% / 50% den Nutzer aus dem TJC-Netzwerk gebannt. Das Beste: Die BannCards gelten für genau ein Jahr, indem Sie mit der Reduzierung beliebig viele Nutzer bannen lassen können. <br><sub>Der Bann ist nicht im Preis enthalten und zu einem Preis von 750.000.000 <i class='fas fa-coins'></i> zzgl. MWSt. ausführbar.</sub>",
         "images": {
             0: "../../images/products/banncard/330x.png",
             1: "../../images/products/banncard/full.png"
@@ -229,9 +244,9 @@ var products = {
         "ratings": {
             "total": 1,
             0: {
-                "stars": 0,
-                "name": "",
-                "text": "Bisher keine Bewertungen."
+                "stars": 2,
+                "name": "Yasu",
+                "text": "Endlich konnte ich diese nervigen DM-Werber loswerden, nur leider hat sich irgendein Moderator gedacht es wäre eine gute Idee Josef wieder zu entbannen, nachdem ich so viel für den Bann gezahlt habe..."
             }
         },
         "preis": 750.000,
@@ -242,7 +257,7 @@ var products = {
         "name": "5-Minuten-Freundschaft",
         "description": "Sie suchen etwas, um mal wieder richtig bei ihren Freunden angeben zu können? Dann haben wir genau das richtige für Sie! Für 5 Minuten können Sie Josef persönlich in ihre Freundesliste hinzufügen! <br><sub>Keine Garantie dass alle Nachrichten gelesen werden</sub>",
         "images": {
-            0: "../../images/products/platzhalter/330x330.png"
+            0: "../../images/products/5minF/330x.png"
         },
         "ratings": {
             "total": 2,
@@ -259,7 +274,7 @@ var products = {
         },
         "preis": 42.69,
         "sale": [true, 42.68],
-        "copy": "Bild: TJC-Team. Idee: Yasu. Vielen Dank für deine Hilfe!"
+        "copy": "Bild: TJC-Team, Unsplash. Idee: Yasu. Vielen Dank für deine Hilfe!"
     },
     8: {
         "name": "KIDDY STUMMINATOR 3000",
@@ -286,9 +301,9 @@ var products = {
     },
     9: {
         "name": "Wasserfestes Redstone",
-        "description": "Sie sind es satt, dass ihre Technik immer wieder durch Wasser zerstört wird und sie immer wieder alles neu aufbauen müssen? Ja, dann haben wir hier genau das richtige für sie.",
+        "description": "Sie sind es satt, dass ihre Technik immer wieder durch Wasser zerstört wird und sie immer wieder alles neu aufbauen müssen? Ja, dann haben wir hier genau das richtige für Sie!",
         "images": {
-            0: "../../images/products/platzhalter/330x330.png" // Idee: Redstone in Tüte
+            0: "../../images/products/wasserfestesredstone/330x330.png" // Idee: Redstone in Tüte
         },
         "ratings": {
             "total": 2,
@@ -305,13 +320,13 @@ var products = {
         },
         "preis": 9.99,
         "sale": [true, 8.00],
-        "copy": "Umsetzung und Idee: Luca. Vielen Dank für deine Hilfe!"
+        "copy": "Bilder: Metro. Umsetzung: TJC-Team. Idee: Luca. Vielen Dank für deine Hilfe!"
     },
     10: {
         "name": "Der RickBlocker™",
-        "description": "Sie haben genug von den nervtötenden Rickrolls in ihrem Alltag? Wir haben jetzt die perfekte Lösung für Sie! Mit dem RickBlocker™ können Sie sich jetzt ganz bequem die mit dem Link verknüpfte Website anzeigen lassen. Das Ganze nur für 6,02 € erhältlich überall solange der Vorrat reicht. Wenn Sie sich selbst von der Notwendigkeit des RickBlocker™ überzeugen wollen, haben wir einen Link zu einem Video mit weiterführenden Produktinformationen für Sie erstellt: https://www.youtube.com/watch?v=xvFZjo5PgG0",
+        "description": "Sie haben genug von den nervtötenden Rickrolls in ihrem Alltag? Wir haben jetzt die perfekte Lösung für Sie! Mit dem RickBlocker™ können Sie sich jetzt ganz bequem die mit dem Link verknüpfte Website anzeigen lassen. Das Ganze nur für 6,02  <i class='fas fa-coins'></i> erhältlich überall solange der Vorrat reicht. Wenn Sie sich selbst von der Notwendigkeit des RickBlocker™ überzeugen wollen, haben wir einen Link zu einem Video mit weiterführenden Produktinformationen für Sie erstellt: <a href='https://www.youtube.com/watch?v=xvFZjo5PgG0' target='_blank'>https://www.youtube.com/watch?v=xvFZjo5PgG0</a>",
         "images": {
-            0: "../../images/products/platzhalter/330x330.png"
+            0: "../../images/products/rickblock/330x330.png"
         },
         "ratings": {
             "total": 3,
@@ -333,13 +348,13 @@ var products = {
         },
         "preis": 6.02,
         "sale": [false, 0],
-        "copy": "Umsetzung und Idee: wildparkmaedel. Vielen Dank für deine Hilfe!"
+        "copy": "Bilder: Kisspng, SHOUTS. Umsetzung: TJC-Team. Idee: wildparkmaedel. Vielen Dank für deine Hilfe!"
     },
     11: {
         "name": "StreamerKit mit Stil ℮",
-        "description": "Es ist kurz vor 18 Uhr und Sie verspüren schon ein leichtes Jucken in den Augen, Sie bekommen merklich weniger Luft und ein rötlicher Ausschlag bahnt sich an? Dann leiden Sie auch an der Ping Allergie, doch damit ist jetzt Schluss! Dank dem StreamerKit mit Stil ℮ gehören diese Qualen jetzt der Vergangenheit an. Mit nur einem Klick kurz vor dem Streamstart, können Sie ganz praktisch alle Töne deaktivieren und für gerade einmal 17,59 € die Stille genießen.",
+        "description": "Es ist kurz vor 18 Uhr und Sie verspüren schon ein leichtes Jucken in den Augen, Sie bekommen merklich weniger Luft und ein rötlicher Ausschlag bahnt sich an? Dann leiden Sie auch an der Ping Allergie, doch damit ist jetzt Schluss! Dank dem StreamerKit mit Stil ℮ gehören diese Qualen jetzt der Vergangenheit an. Mit nur einem Klick kurz vor dem Streamstart, können Sie ganz praktisch alle Töne deaktivieren und für gerade einmal 17,59  <i class='fas fa-coins'></i> die Stille genießen.",
         "images": {
-            0: "../../images/products/platzhalter/330x330.png"
+            0: "../../images/products/streamkit/330x.jpg"
         },
         "ratings": {
             "total": 2,
@@ -354,13 +369,13 @@ var products = {
                 "text": "Top Produkt, ausnahmslos empfehlenswert! Besonders gut gefällt mir als Zuschauer, dass auch die Voice Call Töne unterdrückt werden und ich nicht jedes Mal denke, selbst angerufen zu werden."
             }
         },
-        "preis": 15.50,
+        "preis": 17.59,
         "sale": [false, 0],
         "copy": "Umsetzung und Idee: wildparkmaedel. Vielen Dank für deine Hilfe!"
     },
     12: {
         "name": "TJC-Tinder",
-        "description": "Sie fühlen sich einsam zu Zeiten von Corona und sehnen sich nach einem festen Partner oder einer virtuellen Beziehung? Da haben wir genau das Richtige für Sie! Mit TJC Tinder.net können Sie sich ganz entspannt online kennenlernen, wahlweise bekommen Sie mit unserem Fast Lane Angebot ohne große Wartezeit unkompliziert live einen durch Dritte zufällig ausgesuchten Partner zugesprochen. Schon ab 4,99 € monatlich können Sie heute noch eine Mitgliedschaft abschließen.",
+        "description": "Sie fühlen sich einsam zu Zeiten von Corona und sehnen sich nach einem festen Partner oder einer virtuellen Beziehung? Da haben wir genau das Richtige für Sie! Mit TJC Tinder.net können Sie sich ganz entspannt online kennenlernen, wahlweise bekommen Sie mit unserem Fast Lane Angebot ohne große Wartezeit unkompliziert live einen durch Dritte zufällig ausgesuchten Partner zugesprochen. Schon ab 4,99  <i class='fas fa-coins'></i> monatlich können Sie heute noch eine Mitgliedschaft abschließen.",
         "images": {
             0: "../../images/products/tinder/330x.png"
         },
@@ -388,7 +403,7 @@ var products = {
     },
     13: {
         "name": "Spoiler",
-        "description": "Werde jetzt zu den neusten TJC-Projekten gespoilert, ganz gratis für nur 29.99€!<br><sub>PS: Ironman stirbt.</sub>",
+        "description": "Werde jetzt zu den neusten TJC-Projekten gespoilert, ganz gratis für nur 29.99 <i class='fas fa-coins'></i>!<br><sub>PS: Ironman stirbt.</sub>",
         "images": {
             0: "../../images/products/spoiler/01.jpg"
         },
@@ -397,13 +412,169 @@ var products = {
             0: {
                 "stars": 5,
                 "name": "Ich-Spoiler-Dich",
-                "text": "Hopper hat überlebt, Flynn ist nicht der Böse, Nina Myers ist die Böse, Michael Scofield ist nicht tot, Ray Monroe hat seine Frau und Tochter ermordet, T-Bag hat einen Sohn, "}
+                "text": "Hopper hat überlebt, Flynn ist nicht der Böse, Nina Myers ist die Böse, Michael Scofield ist nicht tot, Ray Monroe hat seine Frau und Tochter ermordet, T-Bag hat einen Sohn, Reddington ist nicht Reddington, Chicago ist nur ein soziales Experiment, Toni Almeida ist böse. Dann nicht mehr, und dann wieder. Ray Breslin ist auf einem Schiff gefangen, Sarah ist nicht tot, "
+            }
         },
         "preis": "ab " + 4.99,
         "sale": [false, 0],
         "copy": "Bild: Amazon <br> Umsetzung und Idee: mos lo mos. Ironman stirbt."
     },
+    14: {
+        "name": "Lebensgroßer TheJoCraft®️-Pappaufsteller™️",
+        "description": "Haben Sie auch keine Freunde? Hat Ihre Familie Sie schon verlassen? Fühlen Sie sich ebenfalls immer so einsam und allein gelassen? Sehnen Sie sich vergeblich nach einem unerschütterlichen Freund, der Ihnen immer zur Seite steht? DAMIT IST JETZT SCHLUSS! Denn WIR haben DIE LÖSUNG! Kaufen Sie jetzt den neuen TheJoCraft®️-Pappaufsteller™️ - In lebensgroß! Abgebildet ist der international bekannte Influenzer TheJoCraft - eine Persönlichkeit, mit der Sie leicht emotionale Bindungen aufbauen können!<br><br><ul id='special-id-for-zhyrd'><li>- Dank unserer innovativen Aufstell-Technologie ist das Stehenbleiben garantiert! Sie können ihn also auch auf besonders unebenen Boden aufstellen!</li><li>- Auch draußen ist der TheJoCraft®️-Pappaufsteller™️ nicht verkehrt: Er ist wasserdicht! Regen, Sturm und sonstiges Unwetter kann Pappe und Tinte nichts anhaben! Ist das nicht absolut kaufenswert?</li><li>- Es wird dafür gesorgt, dass nur klima- und umweltneutrale Stoffe für unsere Produkte verwendet werden. Unsere Pappe besteht zum Beispiel ausschließlich aus dem unzertifizierten, seltenen Tropenholz aus den bedrohten Urwäldern Südamerikas, von unterbezahlten Holzfällern rücksichtslos abgeholzt und von ausgebeuteten Kinderarbeitern verarbeitet! Sie brauchen sich also keine Gedanken machen! Dem Kauf steht nichts mehr im Wege!</li><li>- Sie hängen zu sehr an dem TheJoCraft®️-Pappaufsteller™️ und wollen ihn am liebsten überall mit hinnehmen? Dann ist vielleicht der neue Miniatur-TheJoCraft®️-Pappaufsteller™️-To-Go inklusive TheJoCraft®️-Tragetasche das Richtige für Sie! Mehr Informationen unter www.thejocraft-pappaufsteller.de</li></ul><br> Warum zögern Sie noch? Schlagen Sie zu! Bald wird der TheJoCraft®️-Pappaufsteller™️ nicht mehr verfügbar sein!",
+        "images": {
+            0: "../../images/products/pappaufsteller/330x.png",
+            1: "../../images/products/pappaufsteller/full.png"
+        },
+        "ratings": {
+            "total": 3,
+            0: {
+                "stars": 5,
+                "name": "TheJoCraftFanboy42",
+                "text": "DER BESTE KAUF MEINES LEBENS! Das letzte Stück meiner TheJoCraft-Sammlung ist gestern angekommen! Der Pappaufsteller steht wenn ich schlafe direkt neben mir, neben der TheJoCraft-Zimmerpflanze macht er sich echt gut! Jetzt habe ich nicht nur eine TheJoCraft-Bettdecke, ein TheJoCraft-Kopfkissen, dreißig TheJoCraft-Wandposter, einen TheJoCraft-Teppich und eine TheJoCraft-Schreibtischunterlage, sondern auch einen lebensgroßen TheJoCraft-Pappaufsteller! Ich überlege mir, gleich fünfzig weitere Pappaufsteller zu kaufen, dann kann ich mir endlich meine eigene TheJoCraft-Armee zusammenstellen! Ein Lebenstraum!"
+            },
+            1: {
+                "stars": 5,
+                "name": "Anonym",
+                "text": "Endlich habe ich einen Freund, jetzt fühle ich mich nicht mehr so alleine. Wenn ich auf meinem Bett liege kann ich dem Pappaufsteller direkt in die Augen schauen, und das macht mir gar keine Angst, ich fühle mich überhaupt nicht beobachtet. So kann ich viel besser einschlafen. Ich weiß zwar nicht, warum der Darsteller einen Ziegelstein in der Hand hält, aber das stört mich nicht. Danke für dieses tolle Produkt."
+            },
+            2: {
+                "stars": 1,
+                "name": "ILoveYouBob",
+                "text": "FEHLKAUF! ICH RATE ALLEN DAVON AB, DIESES PRODUKT ZU KAUFEN! Trotz den Informationen, die in der Produkt-Beschreibung angegeben wurden, lässt sich der Aufsteller kaum hinstellen! Er kippt sofort um! UND DAFÜR HABE ICH MEINE 110€ HINGEBLÄTTERT! ICH VERLANGE EINE RÜCKERSTATTUNG ODER ICH ZEIGE SIE AN! Ich bin zutiefst enttäuscht. Dabei wollte ich mit ihm meinem Sohn Bob eine Überraschung machen! Na ja, wenigstens lässt sich der TheJoCraft-Pappaufsteller immer noch als Bastelpappe verwenden und ich kann meine Wut daran auslassen, deshalb der halbe Stern."
+            }
+        },
+        "preis": 109.99,
+        "sale": [false, 0],
+        "copy": "Idee und Umsetzung: Zhyrd. Vielen Dank für deine Hilfe (und die geniale Idee)."
+    },
+    15: {
+        "name": "TJC-Soundkarte",
+        "description": "Die Stimmen von Schauspielern in Filmen oder deiner Lehrer im Onlineunterricht sind fad und eintönig? Mit dieser von uns speziell angefertigten Soundkarte kannst du jede Stimme durch Josefs Stimme ersetzen! Für dich hört es so an als würde Josef dein Mathematikunterricht halten und du musst nicht mal warten, bis er wirklich Lehrer ist. Außerdem kannst du mit der Mikrofoneingabe deine Freunde mit deiner neuen Stimme begeistern!<br>Pro Version: 420€ | Nur die Pro-Version hat noch zusätzlich einen Übersetzer damit auch Deutsche unsere billigen österreichischen Supporter im Talk verstehen können.",
+        "images": {
+            0: "../../images/products/soundkarte/330x.png"
+        },
+        "ratings": {
+            "total": 3,
+            0: {
+                "stars": 5,
+                "name": "<i>Benutzer wurde gesperrt</i>",
+                "text": "Das is ja ur toll, jetzt kann ich endlich die Schauspieler auf meiner Lieblingsinternetseite Po* mit Josefs Stimme hören!!!"
+            },
+            1: {
+                "stars": 5,
+                "name": "MoinMaierYT",
+                "text": "Ich habe die Pro-Version aber die muss kaputt sein. Voll doff Alter. Ich kann jetzt zwar die Supporter verstehen aber die Übersetzung scheint falsch zu sein. Aus keine Ahnung was er sagt ich verstehe es ja nicht, wird immer was in die Richtung „Du bist so ein dummer Piefke“. Das letzte Wort wurde anscheinend nicht mal übersetzt. Was bedeutet das?"
+            },
+            2: {
+                "stars": 1,
+                "name": "TheJoCraft",
+                "text": "Lieber Fabi, ich habe die Soundkarte bei meiner letzten YouTube Aufnahme getestet. Habe aber keinen Unterschied herausgehört. Das ist ein kompletter Dreck; wir verkaufens aber bitte trotzdem. LG Josef <br>Ps: bitte lösch diese Rezension, soll ja niemand wissen"
+            }
+        },
+        "preis": 420.99,
+        "sale": [true, 275.99],
+        "copy": "Idee und Umsetzung: Flo. Vielen Dank für deine Hilfe (und die geniale Idee)."
+    },
+    16: {
+        "name": "sliveBot SourceCode",
+        "description": "Du möchtest selber in deinen Bot die Benachrichtigung einbauen, wenn ein Streamer live geht möchtest dafür aber nicht den sliveBot benutzen, dann wird dir dieses Produkt sicher gefallen, heute im Sonderangebot gibt es den Botcode sogar um 50% erniedrigt, so kannst du den Bot nach deinen Belieben erweitern. Für einen Aufpreis von 20€ gibts auch noch das Ticketsystem vom TJCBot dazu.",
+        "images": {
+            0: "../../images/products/slive/smol.png"
+        },
+        "ratings": {
+            "total": 3,
+            0: {
+                "stars": 5,
+                "name": "Faker532",
+                "text": "Super! Nun kann ich endlich den Code den andere mühevoll geschrieben haben für mich selber nutzen und vor meinen Freunden damit angeben!"
+            },
+            1: {
+                "stars": 1,
+                "name": "Luca",
+                "text": "Wer hatte diese bescheuerte Idee? Könnt ihr euch vorstellen wie lange wir daran gesessen haben?"
+            },
+            2: {
+                "stars": 5,
+                "name": "Gamer5321",
+                "text": "Hah endlich hab ich den SourceKot vom Ticketbot jetzt habt ihr es doch nicht hinbekommen den Code mir nicht zu geben, LubLp und Natro ihr könnt halt nichts"
+            }
+        },
+        "preis": 840.99,
+        "sale": [true, 499.99],
+        "copy": "Idee und Umsetzung: Luca. Vielen Dank für deine Hilfe (und den Code)."
+    },
+    17: {
+        "name": "Pixelnator",
+        "description": "Wussten Sie, dass Sie gerade telefonieren und die 42 Bildschirmübertragung zu viel Internet beansprucht? Verwenden Sie jetzt Pixelnator! Pixelnator pixeliert alle Bildschirmübertragungen, sodass Sie Ihre Internetnutzung speichern und nichts sehen können!",
+        "images": {
+            0: "../../images/products/pixelnator/330x1.png"
+        },
+        "ratings": {
+            "total": 2,
+            0: {
+                "stars": 5,
+                "name": "Der Berauschte",
+                "text": "Danke, damit kann ich jetzt endlich auch mit Mobilen Daten Bildschirmübertragungen ansehen, ohne dass ich viel Internet verbrauche."
+            },
+            1: {
+                "stars": 1,
+                "name": "Der Dummkopf",
+                "text": "Hööhh, man kan nichts mer lesen, dass produkt funcktioniert nicht."
+            }
+        },
+        "preis": 0.99,
+        "sale": [false, 0],
+        "copy": "Idee und Umsetzung: Ari. Vielen Dank für deine Hilfe."
+    },
+    18: {
+        "name": "Minecraft - Pädagogisch wertvoll?",
+        "description": "Sie ist es! Die Facharbeit, welche damals die Welt Freude versetzte. Sie wollen Ihre Eltern von Minecraft überzeugen? Dann haben wir das richtige Produkt für Sie! Eine exklusive Facharbeit, welche den pädagogischen Charakter von Minecraft unter die Lupe nimmt.",
+        "images": {
+            0: "../../images/products/facharbeit/330x.png"
+        },
+        "ratings": {
+            "total": 1,
+            0: {
+                "stars": 5,
+                "name": "Anonym",
+                "text": "MEINE ELTERN HABEN MIR MINECRAFT GEKAUFT JAAAAAHAHAHAHAHAHA DANKEEEEEE."
+            }
+        },
+        "preis": 14.60,
+        "sale": [false, 0],
+        "copy": "Idee und Umsetzung: Flo. Vielen Dank für deine Hilfe."
+    },
+    19: {
+        "name": "Shift! - Der Podcast",
+        "description": 'Unterbrochen wird der Spaß von unpassenden und unlustigen Einspielern von diversen YouTuber-Kollegen, abgespielt von Josefs Soundboard um sich selbst Freunde vorzugaukeln; deplatzierten und völlig übernutzten Rick Rolls; sowie peinlicher Stille, nachdem Josef wieder als einziger über seine eigenen Witze gelacht hat. Eine melancholische Reise durch das bemitleidenswerte Leben von TheJoCraft. Fremdscham und Augenverdrehen garantiert. Erhältlich auf allen Streamingplattformen.',
+        "images": {
+            0: "../../images/products/podcast/330x.png"
+        },
+        "ratings": {
+            "total": 1,
+            0: {
+                "stars": 5,
+                "name": "Anonym",
+                "text": "Dieser Podcast ist das was mir im Leben gefehlt hat. 11/10."
+            }
+        },
+        "preis": 7.99 + "/Monat",
+        "sale": [false, 0],
+        "copy": "Idee und Umsetzung: Zhyrd. Vielen Dank für deine Hilfe."
+    }
 }
+
+function makeid(length) {
+    var result = '';
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for (var i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+}
+
 
 
 let splitStringToArray = (string, split) => {
@@ -427,8 +598,8 @@ const Toast = Swal.mixin({
 
 let calculateHomePrice = (produkt, e) => {
     if (produkt[e].sale[0] === true) {
-        return "<del>" + produkt[e].preis + "</del> <strong class='price-text' style='color: red;'>" + produkt[e].sale[1] + "€</strong>";
-    } else return "<strong class='price-text'>" + produkt[e].preis + "€</strong>";
+        return "<del>" + produkt[e].preis + "</del> <strong class='price-text' style='color: red;'>" + produkt[e].sale[1] + " <i class='fas fa-coins'></i></strong>";
+    } else return "<strong class='price-text'>" + produkt[e].preis + " <i class='fas fa-coins'></i></strong>";
 }
 
 // Definiert e basierend auf den Produkten
@@ -452,9 +623,9 @@ let generateRandomProductsHome = () => {
         e = null;
         generateRandomProductsHome();
     } else {
-        document.cookie = "tjcm_promoted_product01=" + e[0];
-        document.cookie = "tjcm_promoted_product02=" + e[1];
-        document.cookie = "tjcm_promoted_product03=" + e[2];
+        sessionStorage.setItem('tjcm_promoted_product01', e[0])
+        sessionStorage.setItem('tjcm_promoted_product02', e[1])
+        sessionStorage.setItem('tjcm_promoted_product03', e[2])
     }
 }
 
@@ -464,26 +635,26 @@ let generateRandomProductsHome = () => {
 let generateHomeItems = () => {
     generateRandomProductsHome();
     if (products) {
-        for (var i = 0; i <3; i++) {
+        for (var i = 0; i < 3; i++) {
             var e = [];
-            e.push(getCookie("tjcm_promoted_product01"));
-            e.push(getCookie("tjcm_promoted_product02"));
-            e.push(getCookie("tjcm_promoted_product03"));
+            e.push(sessionStorage.getItem('tjcm_promoted_product01'));
+            e.push(sessionStorage.getItem('tjcm_promoted_product02'));
+            e.push(sessionStorage.getItem('tjcm_promoted_product03'));
         }
         var p = []
         for (var i = 0; i < 3; i++) {
             var div = d.createElement("div");
-                div.setAttribute("class", "col-xl-4 col-lg-4 col-md-6 col-sm-12");
+            div.setAttribute("class", "col-xl-4 col-lg-4 col-md-6 col-sm-12");
             var div2 = d.createElement("div");
-                div2.setAttribute("class", "sport_product");
+            div2.setAttribute("class", "sport_product");
             var figure = d.createElement("figure");
             var img = d.createElement("img");
-                var i1 = e[i]
-                img.setAttribute("src", products[i1].images[0]);
+            var i1 = e[i]
+            img.setAttribute("src", products[i1].images[0]);
             var h3 = d.createElement("h3");
-                h3.innerHTML = calculateHomePrice(products, [e[i]]);
+            h3.innerHTML = calculateHomePrice(products, [e[i]]);
             var h4 = d.createElement("h4");
-                h4.innerHTML = products[e[i]].name;
+            h4.innerHTML = products[e[i]].name;
             figure.appendChild(img);
             div2.appendChild(figure);
             div2.appendChild(h3);
@@ -492,7 +663,7 @@ let generateHomeItems = () => {
             div.setAttribute("id", e[i]);
             div.setAttribute("style", "cursor: pointer;");
             d.getElementById("col-list-merger").appendChild(div);
-            div.addEventListener("click", function(){
+            div.addEventListener("click", function() {
                 window.location.href = "../../product.html?product=" + this.getAttribute("id");
             })
         }
@@ -503,40 +674,40 @@ let generateHomeItems = () => {
 // Toggle Payment Interval
 if (document.getElementById("payment_interval_switch")) {
     var yearly = true;
-document.getElementById("payment_interval_switch").addEventListener("click", function(){
-    if (yearly === true) {
-        // UNCHECKED 
-        id("price_1").innerHTML = products.tjcplus[0].price[1] + "€";
-        id("price_2").innerHTML = products.tjcplus[1].price[1] + "€";
-        id("price_3").innerHTML = products.tjcplus[2].price[1] + "€";
-        id("value1").innerHTML = "bis zu 20% höher";
-        $('#term_monthly').addClass("active_term");
-        $('#term_yearly').removeClass("active_term");
-        yearly = false;
-    } else {
-        id("price_1").innerHTML = products.tjcplus[0].price[0] + "€";
-        id("price_2").innerHTML = products.tjcplus[1].price[0] + "€";
-        id("price_3").innerHTML = products.tjcplus[2].price[0] + "€";
-        id("value1").innerHTML = "bis zu 50% höher";
-        $('#term_monthly').removeClass("active_term");
-        $('#term_yearly').addClass("active_term");
-        yearly = true
- 
-    }
-})
+    document.getElementById("payment_interval_switch").addEventListener("click", function() {
+        if (yearly === true) {
+            // UNCHECKED 
+            id("price_1").innerHTML = products.tjcplus[0].price[1] + " <i class='fas fa-coins'></i>";
+            id("price_2").innerHTML = products.tjcplus[1].price[1] + " <i class='fas fa-coins'></i>";
+            id("price_3").innerHTML = products.tjcplus[2].price[1] + " <i class='fas fa-coins'></i>";
+            id("value1").innerHTML = "bis zu 20% höher";
+            $('#term_monthly').addClass("active_term");
+            $('#term_yearly').removeClass("active_term");
+            yearly = false;
+        } else {
+            id("price_1").innerHTML = products.tjcplus[0].price[0] + " <i class='fas fa-coins'></i>";
+            id("price_2").innerHTML = products.tjcplus[1].price[0] + " <i class='fas fa-coins'></i>";
+            id("price_3").innerHTML = products.tjcplus[2].price[0] + " <i class='fas fa-coins'></i>";
+            id("value1").innerHTML = "bis zu 50% höher";
+            $('#term_monthly').removeClass("active_term");
+            $('#term_yearly').addClass("active_term");
+            yearly = true
+
+        }
+    })
 }
 
 // FOOTER-Change | Wechselt die Links zu den Kanälen.
 if (document.getElementById("thejocraft_txt")) {
-document.getElementById("thejocraft_txt").addEventListener("click", function(){
-    window.open("https://www.youtube.com/user/thejominecraft", "_blank");
-    /*
-    $('#links_team').animate({height: "0px"});
-    setTimeout(() => {
-        $('#links_team').css({display: "none"});
-        $('#links_jo').velocity({height: "50px"});
-    }, 1000); */
-}) 
+    document.getElementById("thejocraft_txt").addEventListener("click", function() {
+        window.open("https://www.youtube.com/user/thejominecraft", "_blank");
+        /*
+        $('#links_team').animate({height: "0px"});
+        setTimeout(() => {
+            $('#links_team').css({display: "none"});
+            $('#links_jo').velocity({height: "50px"});
+        }, 1000); */
+    })
 }
 
 // C O O K I E S //
@@ -545,62 +716,62 @@ function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
     var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
     }
     return "";
-  }
+}
 
 let generateProductList = () => {
     if (products) {
         for (var i = 0; i < products.total; i++) {
             var div = d.createElement("div");
             div.setAttribute("class", "col-xl-4 col-lg-4 col-md-6 col-sm-12");
-        var div2 = d.createElement("div");
+            var div2 = d.createElement("div");
             div2.setAttribute("class", "sport_product");
-        var figure = d.createElement("figure");
-        var img = d.createElement("img");
+            var figure = d.createElement("figure");
+            var img = d.createElement("img");
             img.setAttribute("src", products[i].images[0]);
-        var h3 = d.createElement("h3");
-        console.log(i)
+            var h3 = d.createElement("h3");
+            console.log(i)
             h3.innerHTML = calculateHomePrice(products, i);
-        var h4 = d.createElement("h4");
+            var h4 = d.createElement("h4");
             h4.innerHTML = products[i].name;
-        figure.appendChild(img);
-        div2.appendChild(figure);
-        div2.appendChild(h3);
-        div2.appendChild(h4)
-        div.appendChild(div2);
-        div.setAttribute("id", i);
-        div.setAttribute("style", "cursor: pointer;");
-        d.getElementById("col-list-merger").appendChild(div);
-        div.addEventListener("click", function(){
-            window.location.href = "../../product.html?product=" + this.getAttribute("id");
-        })
+            figure.appendChild(img);
+            div2.appendChild(figure);
+            div2.appendChild(h3);
+            div2.appendChild(h4)
+            div.appendChild(div2);
+            div.setAttribute("id", i);
+            div.setAttribute("style", "cursor: pointer;");
+            d.getElementById("col-list-merger").appendChild(div);
+            div.addEventListener("click", function() {
+                window.location.href = "../../product.html?product=" + this.getAttribute("id");
+            })
 
         }
     } else {
         // Wenn "products" (warum auch immer) nicht geladen werden kann
         var div = d.createElement("div");
         div.setAttribute("class", "col-xl-4 col-lg-4 col-md-6 col-sm-12");
-    var div2 = d.createElement("div");
+        var div2 = d.createElement("div");
         div2.setAttribute("class", "sport_product");
-    var figure = d.createElement("figure");
-    var h3 = d.createElement("h3");
+        var figure = d.createElement("figure");
+        var h3 = d.createElement("h3");
         h3.innerHTML = "Die Produkte wurden nicht geladen. Versuche diese Seite erneut zu laden!";
-    var h4 = d.createElement("h4");
+        var h4 = d.createElement("h4");
         h4.innerHTML = "Fehler beim Laden der Produkte!";
-    div2.appendChild(figure);
-    div2.appendChild(h3);
-    div2.appendChild(h4)
-    div.appendChild(div2);
-    d.getElementById("col-list-merger").appendChild(div);
+        div2.appendChild(figure);
+        div2.appendChild(h3);
+        div2.appendChild(h4)
+        div.appendChild(div2);
+        d.getElementById("col-list-merger").appendChild(div);
 
     }
 }
@@ -610,7 +781,7 @@ let generateProductList = () => {
 
 let setProductSite = () => {
     let res = window.location.search
-    res = res.replace(/\?/g, ''); 
+    res = res.replace(/\?/g, '');
     var params = new URLSearchParams(res);
     if (params.has("product") === true) {
         var product = params.get("product");
@@ -624,49 +795,49 @@ let setProductSite = () => {
 
         for (var i = 0; i < r.total; i++) {
             var div = d.createElement("div");
-                div.setAttribute("class", "carousel-item");
-                if (i === 0) {
-                    div.setAttribute("class", "carousel-item active");
-                }
+            div.setAttribute("class", "carousel-item");
+            if (i === 0) {
+                div.setAttribute("class", "carousel-item active");
+            }
             var div1 = d.createElement("div");
-                div1.setAttribute("class", "titlepage");
+            div1.setAttribute("class", "titlepage");
             var div2 = d.createElement("div");
-                div2.setAttribute("class", "john"); 
+            div2.setAttribute("class", "john");
             var divRating = d.createElement("div");
-                divRating.setAttribute("class", "john_image");
-                divRating.setAttribute("id", "rating");
-                console.log(i)
-                for (var i1 = 0; i1 < r[i].stars; i1++) {
+            divRating.setAttribute("class", "john_image");
+            divRating.setAttribute("id", "rating");
+            console.log(i)
+            for (var i1 = 0; i1 < r[i].stars; i1++) {
+                var _i = d.createElement("i");
+                _i.setAttribute("class", "fas fa-star checked");
+                divRating.appendChild(_i);
+            }
+            if (!(r[i].stars === 5)) {
+                var left = 5 - r[i].stars;
+                for (var a = 0; a < left; a++) {
                     var _i = d.createElement("i");
-                    _i.setAttribute("class", "fas fa-star checked");
+                    _i.setAttribute("class", "fas fa-star");
                     divRating.appendChild(_i);
                 }
-                if (!(r[i].stars === 5)) {
-                    var left = 5 - r[i].stars;
-                    for (var a = 0; a < left; a++) {
-                        var _i = d.createElement("i");
-                        _i.setAttribute("class", "fas fa-star");
-                        divRating.appendChild(_i);
-                    }
-                }
+            }
             var divName = d.createElement("div");
-                divName.setAttribute("class", "john_text");
-                divName.setAttribute("id", "name");
-                divName.innerHTML = r[i].name;
+            divName.setAttribute("class", "john_text");
+            divName.setAttribute("id", "name");
+            divName.innerHTML = r[i].name;
             var p = d.createElement("p");
-                p.setAttribute("class", "lorem_ipsum_text");
-                p.setAttribute("id", "rating_text");
-                if (r[i].text === "" || r[i].text === undefined || r[i].text === null) {
-                    p.innerHTML = "<i>Kunde hat keinen Text angegeben</i>";
-                } else { 
-                    p.innerHTML = r[i].text;
+            p.setAttribute("class", "lorem_ipsum_text");
+            p.setAttribute("id", "rating_text");
+            if (r[i].text === "" || r[i].text === undefined || r[i].text === null) {
+                p.innerHTML = "<i>Kunde hat keinen Text angegeben</i>";
+            } else {
+                p.innerHTML = r[i].text;
 
-                }
+            }
             var divIcon = d.createElement("div");
-                divIcon.setAttribute("class", "icon_image");
+            divIcon.setAttribute("class", "icon_image");
             var img = d.createElement("img");
-                img.setAttribute("src", "images/icon-1.png");
-            
+            img.setAttribute("src", "images/icon-1.png");
+
             divIcon.appendChild(img);
             div2.appendChild(divRating);
             div2.appendChild(divName);
@@ -681,14 +852,19 @@ let setProductSite = () => {
 
         // PRODUKTINFORMATIONEN
         // Urheberrechtsangaben
-        document.getElementById("cmodal_body").innerHTML = "Produkt: " + products[product].name + "<br>ID: " + product + "<br>" + products[product].copy; 
+        document.getElementById("cmodal_body").innerHTML = "Produkt: " + products[product].name + "<br>ID: " + product + "<br>" + products[product].copy;
         document.getElementById("product_img").setAttribute("src", products[product].images[0]);
         document.getElementById("produktname").innerHTML = products[product].name;
         document.getElementById("preis").innerHTML = calculateHomePrice(products, product);
         document.getElementById("description").innerHTML = products[product].description;
+        document.title = "TJC | " + products[product].name;
 
 
         // IN DEN WARENKORB
+        /*
+        ! Dies ist eigentlich die funktion, welche dafür sorgt dass die Produkte in den Warenkorb gepackt werden. Wir haben uns aber dazu entschieden,
+        ! dies weg zu lassen. Ein Warenkorb wäre verdammt umständlich, und wir hatten es hier sowieso nur auf einen Scherz abgesehen. Wer die verlorenen überbleibsel sehen möchte,
+        ! kann diese unter basket.html bestaunen. 
         document.getElementById("addToBasket").addEventListener("click", function(){
             var done = false;
             var basketpre = getCookie("tjcm_basket_items")
@@ -740,7 +916,12 @@ let setProductSite = () => {
 
             }
 
-        })
+        }) */
+
+        var confToken = makeid(30);
+        var buyOrder = makeid(8);
+        document.getElementById("addToBasket").setAttribute('href', 'outback.html?r=buyOrder&identicalBuyOrder=' + buyOrder + "&confirmationId=" + confToken + "&produktId=" + product);
+
 
     } else {
         window.location.href = "../../index.html?ref=404"
@@ -759,7 +940,7 @@ let getItemsCount = () => {
         console.log(true);
         basket = basket.split("&")
         var totalitemsinbasket = 0
-        for (var i = 0; i < basket.length -1; i++) {
+        for (var i = 0; i < basket.length - 1; i++) {
             var thisvar = basket[i]
             thisvar = thisvar.split("x");
             console.log(thisvar[1]);
@@ -768,11 +949,11 @@ let getItemsCount = () => {
         if (document.getElementById("basket-nr")) {
             document.getElementById("basket-nr").innerHTML = totalitemsinbasket;
         }
-    } else {
-        document.cookie = "tjcm_basket_items=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"
-        window.location.href = "../../index.html?ref=illegalBasket";
-        return;
     }
+    /* else {
+           document.cookie = "tjcm_basket_items=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"
+           window.location.href = "../../index.html?ref=illegalBasket";
+           return; // ! Illegal Basket Error */
 }
 
 
@@ -781,22 +962,26 @@ let getItemsCount = () => {
 
 let redirectOutback = () => {
     let res = window.location.search
-    res = res.replace(/\?/g, ''); 
+    res = res.replace(/\?/g, '');
     var params = new URLSearchParams(res);
     if (params.has("r")) {
+        console.log(r)
         var r = params.get("r")
         switch (r) {
             case "tutorial":
                 window.location = "https://tjcteam.de/adminbewerbung";
                 break;
-            case "rating_014tgb3d0v2bnsfoebf2893r": 
+            case "rating_014tgb3d0v2bnsfoebf2893r":
                 window.location = "https://tjcteam.de/adminbewerbung";
                 break;
+            case "buyOrder":
+                window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                break;
             default:
-                window.location.href = "../../index.html?ref=404" 
+                window.location.href = "../../index.html?ref=404"
         }
     } else {
-        window.location.href = "../../index.html?ref=404" 
+        window.location.href = "../../index.html?ref=404"
 
     }
 
@@ -808,28 +993,25 @@ w.onload = () => { // "FILEMANAGER"
     let file = window.location.pathname;
     file = file.replace(/\//g, '');
     file = file.replace(/.html/g, '');
-    console.log(file)
     switch (file) {
         case "index":
             generateHomeItems();
-            getItemsCount();
             break;
         case "products":
             generateProductList();
-            getItemsCount();
             break;
         case "product":
             setProductSite();
-            getItemsCount();
             break;
         case "outback":
             redirectOutback();
             break;
         case "basket":
             break;
+        case "impressum":
+            break;
         default:
             generateHomeItems();
-            getItemsCount();
     }
 
     // Da das hier sicherlich einige Interessiert, kommentiere ich mal was ich hier tu.
@@ -838,18 +1020,25 @@ w.onload = () => { // "FILEMANAGER"
     // https://developer.mozilla.org/de/docs/Web/API/URLSearchParams
     res = res.replace(/\?/g, ''); // "?" am Anfang des Strings wird entfernt
     var params = new URLSearchParams(res); // Joa, kein Plan. JS regelt.
-    
+
     if (params.has("ref") === true) {
         let ref = params.get("ref") // Der Wert hinter dem "="
         switch (ref) {
             case "404":
                 // Produkt oder Seite nonexistent.
-                Swal.fire({ icon: 'error', title: 'Diese Seite existiert nicht!', html: 'Das von dir aufgerufene Produkt oder die Seite gibt es nicht!', showConfirmButton: 'true', confirmButtonText: 'Okay!', showCloseButton: 'true'});
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Diese Seite existiert nicht!',
+                    html: 'Das von dir aufgerufene Produkt oder die Seite gibt es nicht!',
+                    showConfirmButton: 'true',
+                    confirmButtonText: 'Okay!',
+                    showCloseButton: 'true'
+                });
                 break;
-            case "illegalBasket":
-                Swal.fire({ icon: 'error', title: 'Dein Warenkorb ist kaputt!', html: 'Der Inhalt deines Warenkorbs kann von uns nicht verarbeitet werden! Versuche es bitte erneut! (Developer: In der Console findet ihr mehr!)', showConfirmButton: 'true', confirmButtonText: 'Okay!', showCloseButton: 'true'});
-                console.log('%c[ERROR].' + '%cbasket |' + '%cWir konnten den Inhalt deines Warenkorbs nicht laden. Das liegt (vermutlich) daran, dass der Cookie, in welchem die Items gespeichert wurden, manipuliert wurde. Ein Idealer Cookie muss der folgenden RegEx entsprechen: /^((\d+)x(\d+)&)+$/. Schau dir den Cookie "tjcm_error_basket" an, und überprüfe ob dieser mit der RegEx übereinstimmt!', 'color: red;', 'color: lightgreen;', 'color: lightblue;');
-                break;
+                /* //! case "illegalBasket":
+                    Swal.fire({ icon: 'error', title: 'Dein Warenkorb ist kaputt!', html: 'Der Inhalt deines Warenkorbs kann von uns nicht verarbeitet werden! Versuche es bitte erneut! (Developer: In der Console findet ihr mehr!)', showConfirmButton: 'true', confirmButtonText: 'Okay!', showCloseButton: 'true'});
+                    console.log('%c[ERROR].' + '%cbasket |' + '%cWir konnten den Inhalt deines Warenkorbs nicht laden. Das liegt (vermutlich) daran, dass der Cookie, in welchem die Items gespeichert wurden, manipuliert wurde. Ein Idealer Cookie muss der folgenden RegEx entsprechen: /^((\d+)x(\d+)&)+$/. Schau dir den Cookie "tjcm_error_basket" an, und überprüfe ob dieser mit der RegEx übereinstimmt!', 'color: red;', 'color: lightgreen;', 'color: lightblue;');
+                    break; */
         }
     }
 
@@ -865,12 +1054,12 @@ w.onload = () => { // "FILEMANAGER"
 
     setTimeout(function() {
         $("#loadingScreen").fadeOut(500);
-        /*
+
         console.log('%cHeyGuys!', 'font-weight: bold; font-size: 50px; color: red; text-shadow: 1px 1px 0px black, 1px -1px 0px black, -1px 1px 0px black, -1px -1px 0px black;');
         console.log('%cDir sagt jemand, du solltest etwas hier rein kopieren? Jemand sagt dir, hier kannst du kostenlose Produkte bekommen?', 'color: lightblue; font-size: 15px');
-        console.log('%cDANN IST DAS SCHEIßEGAL! Die Chance steht 11 zu 10, dass er dich verarscht.', 'color: red; font-size: 20px; font-style: bold;');
-        console.log('%cDas wird nämlich nicht funktionieren lol. Wir versuchen hier nur so cool zu sein wie Discord das auch macht und hier eine Warnung reinzuschreiben dingens du kannst programmieren? Wir suchen Devs für unsere Projekte! Alles weitere findest du hier: https://www.youtube.com/watch?v=wXvJcisbqHE', 'color: lightblue; font-size: 15px')
-        */
+        console.log('%cDas wird halt nichts bringen lmao', 'color: red; font-size: 20px; font-style: bold;');
+        console.log('%cdingens du kannst programmieren? Wir suchen Devs für unsere Projekte! Alles weitere findest du hier: https://www.youtube.com/watch?v=wXvJcisbqHE', 'color: lightblue; font-size: 15px')
+
     }, 1500);
 
 }
